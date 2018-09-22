@@ -18,5 +18,5 @@ Defining Properties and Using Events in Components/Directives
 Using the Http object for Ajax calls along with RxJS observables 
 Working with Utility and Service classes (such as for sorting and Ajax calls) 
 Using Angular databinding Syntax [], () and [()] 
-Optional: Webpack functionality is available for module loading and more (see the readme for details) 
-Optional: Ahead-Of-Time (AOT) support is available (see the readme for details) Much more!
+Optional: Webpack functionality is available for module loading and more 
+Optional: Ahead-Of-Time (AOT) support is available Much more!
