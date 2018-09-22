@@ -1,0 +1,112 @@
+
+.bgimg{
+
+
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../assets/img/portfolio/5.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 650px;
+  
+  }
+
+ p,h3{
+
+  font-family: 'Spirax', cursive;
+
+
+ } 
+
+ h1{
+
+    font-family: 'Spirax', cursive;
+    font-size: 50px;
+    font-weight: bold;
+
+ }
+
+ .ourteam{
+    
+  height: 700px;
+  
+  padding: 100px 0px 60px;
+  
+  width: 100%
+  
+  }
+  
+  .ourteam h1{
+  
+      font-size: 50px;
+      font-weight: bold;
+      font-family: 'Spirax', cursive;
+  
+  }
+  
+  .teamset{
+  
+  margin-top: 70px !important;
+  
+  
+  
+  }
+ 
+
+ 
+  .bg2img{
+
+    padding: 100px 0px 60px;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url(../../assets/img/team/IMG_9682.JPG);
+    
+    background-size: 100% 100%;
+    width: 100%;
+    /* height: 1000px; */
+    height: auto;
+
+overflow: hidden;
+    background-position: center;      /* center the image */
+    background-size: cover;       
+    
+    }
+
+    .carousel{
+
+        padding: 15% 15%;
+        
+        
+            }
+
+
+            .card { background-color: rgba(12, 11, 11, 0.3); }
+ .card-footer { opacity: 1}
+
+.card-footer .text-center{
+
+color: whitesmoke;
+
+}
+ .card .card-img-top {
+    
+    opacity: 0.8;
+    
+    
+    
+    
+    
+   
+    
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container h1{
+    
+    font-size: 32px;
+    
+    }
+    
+    
+    
+    } 
+    

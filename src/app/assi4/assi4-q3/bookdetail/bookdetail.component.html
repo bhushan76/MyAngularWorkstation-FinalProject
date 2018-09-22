@@ -1,0 +1,14 @@
+<h1>This will show details of books click the below button</h1>
+<button (click)="getdetails()">detail</button>
+
+
+<div [hidden]="h1" >
+    <ul *ngFor="let item of Bname"> 
+    
+      <li>{{item.bookname}} {{item.price}} {{item.author}} {{item.NoOfPages}}</li>    
+    </ul>
+    
+    
+    </div>
+
+<hr>

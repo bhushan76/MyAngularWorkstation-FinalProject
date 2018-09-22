@@ -1,0 +1,31 @@
+<button (click)="Studname()">studentName</button>
+<div [hidden]="Hvalue">
+
+<ul *ngFor="let item of studName1">
+
+  <li>{{item.name}}</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+
+<hr>
+<button (click)="Studdetail()">studentDetails</button>
+
+<div [hidden]="H2value">
+<ul *ngFor="let item of studDetail" style="text-align:center">
+
+  <li>{{item.name}} {{item.age}} {{item.batch}}</li>
+
+
+
+</ul>
+
+</div>
+
+

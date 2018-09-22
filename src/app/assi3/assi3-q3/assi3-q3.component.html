@@ -1,0 +1,15 @@
+<br> Q3 <br> <b>User defined function from string interpolation</b> <br>
+      <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>Aww yeah, function from string interpolation is called</p>
+        <hr>
+        <div *ngIf="!staticAlertClosed" >
+            <ngb-alert (close)="staticAlertClosed = true">If function called then this will dismiss in 10 seconds!</ngb-alert>
+            {{fun()}}
+        </div>
+
+
+        <p class="mb-0"> Above part is dismssable if already done reload it.</p>
+      </div>
+      <!-- {{fun()}} -->
+<hr>

@@ -1,0 +1,19 @@
+<h1>This will show name of books click the below button</h1>
+<button (click)="getname()">names</button>
+
+<div [hidden]="h2" >
+<ul *ngFor="let item of Bname"> 
+
+  <li>{{item.bookname}}</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+<hr>
+<app-bookprise></app-bookprise>

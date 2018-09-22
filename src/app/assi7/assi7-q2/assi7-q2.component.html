@@ -1,0 +1,55 @@
+<div class="container">
+
+    <div style="text-align: center; background-color: skyblue ">
+
+        <h1>Ticket booking portal</h1>
+      </div>
+      <form >
+      
+      
+      
+        <mat-form-field>
+          <mat-select placeholder="select your destination" [(ngModel)]="selectedValue" name="cityname">
+            <mat-option *ngFor="let city of cities;index as i" [value]="city">
+             {{city}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <br>
+      
+        <p> Selected value: {{selectedValue}} </p>
+      <br>
+      
+        <mat-form-field>
+            <input matInput [matDatepicker]="picker" placeholder="Choose a date"  [(ngModel)]='date1' name="mydate">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+          
+      <br>
+      <mat-form-field>
+          <input matInput [matDatepicker]="picker1" placeholder="Choose a date"  [(ngModel)]='date2' name="mydate1">
+          <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+      
+      
+        <br>
+        
+        <button mat-stroked-button color="primary" (click)="show=!show">{{show ? 'hide' : 'show'}}</button>
+      </form>
+      
+      
+      <div *ngIf="show">
+      
+      <h3 >your journey will start on {{date1}}</h3>
+      
+      
+      <br>
+      
+      <h3>your journey will End on {{date2}}</h3>
+      
+      
+      </div>
+
+</div>

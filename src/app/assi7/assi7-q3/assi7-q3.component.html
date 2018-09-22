@@ -1,0 +1,57 @@
+<div class="container">
+
+
+
+  
+<h1 style="text-align: center; background-color: aquamarine"> Car details</h1>
+
+<form class="example-form" #registerForm="ngForm">
+
+  
+    <div class="col-md-4">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Name of Car" value="" [(ngModel)]="carName" name="name">
+      </mat-form-field>
+    </div>
+    <div class="col-md-4">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Type of Car" value="" [(ngModel)]="carType" name="type">
+      </mat-form-field>
+    </div>
+    <div class="col-md-4">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Color of Car" value="" [(ngModel)]="carColor" name="color">
+      </mat-form-field>
+    </div>
+
+    <div class="col-md-4">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Number of Car" type="text" value="" [(ngModel)]="carNumber" name="number" required>
+      </mat-form-field>
+    </div>
+    <div class="col-md-4">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Number of Total Seat" type="number" value="" [(ngModel)]="carSeats" name="seats">
+      </mat-form-field>
+    </div>
+  
+
+
+  <br>
+
+
+    <button
+      mat-stroked-button color="primary" (click)="onSubmit()"
+      [disabled]="registerForm.form.invalid"> Submit
+    </button>
+
+
+</form>
+
+
+
+
+
+
+
+</div>

@@ -1,0 +1,41 @@
+<div class="container">
+<h1 class="header"> routing will display following output
+</h1>
+
+<button class="btn btn-success" type="button" (click)="showd()">for database</button>
+<div [hidden]="h1">
+
+    <app-databases></app-databases>
+    
+
+
+</div>
+<hr>
+<button class="btn btn-success" type="button" (click)="showo()">for os</button>
+<div [hidden]="h2">
+
+    <app-operating></app-operating>
+
+</div>
+<hr>
+<button class="btn btn-success" type="button" (click)="showl()">for language</button>
+<div [hidden]="h3">
+
+
+    <app-programming-languages></app-programming-languages>
+</div>
+<hr>
+<hr>
+
+<h1 class=" header">for routing click followinng button</h1>
+
+
+
+<nav>
+    <a class="btn" routerLink="../error"><button class="btn btn-primary" type="button">OS</button></a><br>
+    <a class="btn" routerLink="../error"><button class="btn btn-primary" type="button">language</button></a><br>
+    <a class="btn" routerLink="../error"><button class="btn btn-primary" type="button">Database</button></a><br>
+    
+    </nav>
+    
+

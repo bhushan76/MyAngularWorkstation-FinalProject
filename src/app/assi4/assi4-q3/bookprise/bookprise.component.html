@@ -1,0 +1,16 @@
+<h1>This will show name and price of books click the below button</h1>
+<button (click)="getprice()">prise</button>
+
+<div [hidden]="h3">
+    <ul *ngFor="let item of Bname"> 
+    
+      <li>{{item.bookname}} {{item.price}}</li>
+    
+    
+    </ul>
+    
+    
+    </div>
+
+<hr>
+<app-bookdetail></app-bookdetail>

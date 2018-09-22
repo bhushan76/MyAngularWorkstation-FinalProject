@@ -1,0 +1,89 @@
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top fixed-top">
+
+        <div class="container">
+          <!-- <a class="navbar-brand text-warning font-weight-bold" href="#">Bhushan's Workstation</a> -->
+
+          <a class="navbar-brand text-warning font-weight-bold" href="#"> <img id="logo" alt="Logo" src="../../assets/logo2.png" width="47" height="47"><span>Bhushan's Workstation<b>Web Devlopment</b></span> </a>
+
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link" routerLink="aboutus">About Us</a>
+              </li>
+              <li class="nav-item ">
+                      <a class="nav-link" routerLink="contactus">Contact Us</a>
+                  </li>
+                  <li class="nav-item ">
+                          <a class="nav-link" routerLink="/feedback">Feedback</a>
+                      </li>
+        
+              <li ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                  <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu">
+                      <span> <i class="fa fa-hand-o-down"></i><span> Assignments</span></span>
+                  </a>
+                  <ul class="dropdown-menu" ngbDropdownMenu>
+        
+                      <li>
+                          <a class="dropdown-item" routerLink="assi1" routerLinkActive="active" (click)="collapseNavbar()">
+                                <i class="fa fa-spinner fa-spin"></i>
+                              <span>Assignment 1</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a class="dropdown-item" routerLink="assi2" routerLinkActive="active" (click)="collapseNavbar()">
+                                <i class="fa fa-hourglass-o"></i>
+                              <span>Assignment 2</span>
+                          </a>
+                      </li> 
+                      <li>
+                        <a class="dropdown-item" routerLink="assi3" routerLinkActive="active" (click)="collapseNavbar()">
+                                <i class="fa fa-hourglass-1"></i>
+                            <span>Assignment 3</span>
+                        </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" routerLink="assi4" routerLinkActive="active" (click)="collapseNavbar()">
+                            <i class="fa fa-hourglass-2"></i>
+                          <span>Assignment 4</span>
+                      </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" routerLink="assi5" routerLinkActive="active" (click)="collapseNavbar()">
+                            <i class="fa fa-hourglass"></i>
+                        <span>Assignment 5</span>
+                    </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" routerLink="assi6" routerLinkActive="active" (click)="collapseNavbar()">
+                        <i class="fa fa-graduation-cap"></i>
+                      <span>Assignment 6</span>
+                  </a>
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="assi7" routerLinkActive="active" (click)="collapseNavbar()">
+                        <i class="fa fa-user-secret"></i>
+                    <span>Assignment 7</span>
+                </a>
+            </li>
+        </ul>
+              </li>
+            </ul>
+            <form class="form-inline">
+              <input class="form-control input-sm mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-info my-2 btn-sm my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+
+
+        </div>
+        </nav>
+
+    

@@ -1,0 +1,54 @@
+<div class="container">
+
+    <form class="form-group">
+
+<div class=" container form-group">
+
+<label for="sname">Student Name</label>
+<input required ngModel minlength="5" type="text" name="sname" #sname="ngModel" class="form-control">
+
+<div *ngIf="sname.touched && !sname.dirty" class="danger alert-danger">please fill the name</div>
+<div *ngIf="!sname.valid && sname.touched" class="danger alert-danger">please add minimum 5 character</div>
+
+</div>
+
+
+
+
+<div class=" container form-group">
+
+        <label for="pass">Password</label>
+        <input ngModel maxlength="7" type="text" name="pass" #pass="ngModel" class="form-control">
+        
+        <div *ngIf="pass.touched" class="bg bg-dark text-light">validation of maxlength</div>
+        
+        </div>
+        
+
+
+
+<div class="form-group container">
+<label for="cname">College Name</label>
+<input required ngModel  type="text" name="cname" #cname="ngModel" class="form-control">
+
+<div *ngIf="cname.touched && cname.invalid" class="danger alert-danger">this field is compulsary</div>
+
+</div>
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+</div>

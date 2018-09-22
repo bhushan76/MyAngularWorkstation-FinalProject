@@ -1,0 +1,12 @@
+<hr>
+<h1 class="pcenter">parent Component</h1>
+<input type="text" #valuetext value="TYpe msg for child">
+<br>
+<br>
+<button (click)="textfromparent(valuetext.value)">send to child</button>
+
+
+<h2 class="pcenter">message from child</h2>
+<h1 class="pcenter">{{childmessage}}</h1>
+
+<app-child (childdata)="childmessage=$event" [parentsend]="parentdata"></app-child>

@@ -1,0 +1,32 @@
+<div class="container">
+    <form class="form-group">
+    
+      <div class="container">
+    <label for="name">Name</label>
+    
+    <input required ngModel  type="text" class="form-control" name="name" #name="ngModel" class="form-control"(change)="getname(name)">
+    
+    <div *ngIf="name.touched && name.invalid" class="danger alert-danger">
+    plz fill the name
+    
+    </div>
+    
+      </div>
+    
+    
+    
+      <div class="container">
+          <label for="pass">Password</label>
+          
+          <input ngModel type="password" class="form-control" name="pass" #pass="ngModel" class="form-control">
+          
+            </div>
+     <br><br>
+            <div class="container">
+              <button class="btn btn-primary">Submit</button>
+            </div> 
+      
+    </form>
+    
+    
+    </div>

@@ -1,0 +1,12 @@
+<hr>
+
+<h1 class="ccenter">child component</h1>
+
+<h2 class="ccenter">message from parent</h2>
+  <h1 class="ccenter">{{parentsend}}</h1>
+
+
+ <input  type="text" #inbox value="Type msg for parent" >
+  <br>
+  <br>
+  <button  (click)="textfromchild(inbox.value)">send to parent </button>

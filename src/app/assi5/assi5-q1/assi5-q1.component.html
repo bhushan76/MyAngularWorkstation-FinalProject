@@ -1,0 +1,96 @@
+
+
+<div class="container">
+    <form class="form-group">
+    <h1 class=" text-center">Admission Form</h1>
+
+<table class="table table-striped table-bordered table-dark form-group">
+  
+  
+  
+  <tr>
+    <th>Name:</th>
+    <th><input type="text" #name class="form-control"></th>
+
+  </tr>
+  <tr>
+      <th>Address</th>
+      <th><textarea name="" id="" cols="30" rows="3" #address class="form-control"></textarea></th>
+      
+  
+    </tr>
+    <tr>
+        <th>Gender:</th>
+        <th>Male:<input type="radio" [(ngModel)]="genders" value="Male" name="gend" #gender >
+          Female:<input type="radio" [(ngModel)]="genders" value="Female" name="gend" #gender  >
+        </th>
+    
+      </tr>
+      <tr>
+          <th>MobileNo:</th>
+          <th><input type="number" #mobile class="form-control"></th>
+      
+        </tr>
+        <tr>
+            <th>College Name:</th>
+            <th><input type="text" #college class="form-control"></th>
+        
+          </tr>
+        
+          <tr>
+              <th>Email Id:</th>
+              <th><input type="email" #email class="form-control"></th>
+          
+            </tr>
+            <tr>
+                <th>Batch Name:</th>
+                <th>
+                  <select name=""  id="" #batch class="form-control">
+                    <option value="PPA">PPA</option>
+                    <option value="LB">LB</option>
+                    <option value="WebDevelopment">WebDevelopment</option>
+                    <option value="unix">unix</option>
+                    <option value="Projext">Projext</option>
+
+
+
+                  </select>
+            
+              </tr>
+            
+<tr >
+<td colspan="2">
+
+  <button  (click)="fill(name,address,gender,mobile,college,email,batch)" class="form-control btn btn-primary">click to submit</button>
+
+</td>
+  
+</tr>
+
+
+<tr>
+  <td colspan="2"><h2>submit & check response on console
+    </h2></td>
+  
+</tr>
+
+</table>
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
